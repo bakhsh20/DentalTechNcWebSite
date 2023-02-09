@@ -1,0 +1,704 @@
+
+/* NAVIGATION AND FOOTER CONTENT */
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-container {
+  width: 100%;
+  height: 80px;
+  background-color: #89FBD3;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item2{
+  display: flex;
+  align-items: center;
+  float: right;
+  justify-content: end;
+  margin-right: 3%;
+}
+
+/*Allows the image to be a item inside the anchor tag as a container. Itself is a container item inside .nav-item1 */
+.nav-item1 a {
+  display: flex;
+  margin-left: 7%;
+}
+
+/* Padding for logo */
+.logo{
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* Navigation list elements styling */
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Navigation list block styling */
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+/* Element styling for navigation link elements */
+nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #0080D4;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Element effect styling for navigation link elements. Provides white color hover over effect */
+nav ul li a:hover{
+  color: white;
+  transition: .7s;
+  padding: 100% 10px;
+}
+
+
+/*Section for #page-container, #content-wrap, #footer was sampled from 
+freecodingcamp.org. This created a footer that stayed at the bottom of the page. Link is provided below:
+
+https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/*/
+#page-container{
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap{
+  padding-bottom: 20.0rem;
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20.0rem;
+  background-color: #89FBD3;
+}
+
+/*
+Container for 4 footer items. 
+*/
+.footer-container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+/*
+All footer items are justify center to move the container items inside the footer container to the center of the sub containers. 
+*/
+.footer-item1 {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer-item2 {
+  display: flex;
+  color: #0080D4;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-item3{
+  color: white;
+  justify-content: center;
+}
+
+.footer-item1 > div {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 75%;
+  
+}
+
+.footer-container.footer-item2 h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Format the image, phonelink, and email link inside footer */
+.footer-item1 div a {
+  align-self: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+/* Styling for phone link inside the footer */
+.phonelink{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+/* Give the phone icon and number a hover over effect */
+.phonelink:hover {
+  color: white;
+  transition: .5s;
+}
+
+/* Styling for email link inside the footer */
+.email-link{
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.3em
+}
+
+/* Give the email icon and email a hover over effect */
+.email-link:hover{
+  color:white;
+  transition: .5s;
+}
+
+/* Change the size of the phone icon and color */
+i {
+  color: #0080D4;
+}
+
+/* Embedded map styling */
+.footer-item3 iframe{
+  display: flex;
+}
+
+/* Footer logo styling */
+.logo-footer{
+  height: 100px;
+  width: 140px;
+}
+
+/*Causes the items in the footer to wrap in a column when the window size gets too small. */
+@media(max-width: 990px){
+  .footer-container{
+    min-height: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #89FBD3;
+
+  }
+}
+
+/* Styling for hours of operation table inside the footer */
+.footer-table {
+  border-collapse: collapse;
+}
+
+.footer-table tr {
+  border-bottom: 1px solid #3F4756;
+  color: #0080D4;
+}
+
+.footer-table tr:last-child{
+  border-bottom: none;
+}
+
+.footer-table tr,td {
+  padding: .4em 2em;
+}
+
+/* Give the emebedded google map padding around */
+.footer-item3 iframe {
+  padding: 10px;
+}
+
+label{
+  display: block;
+}
+
+input, textarea {
+  display: block;
+}
+
+/* INDEX MAIN CONTENT CSS */
+.main-container-index {
+  margin: 2% 3% 2% 3%;
+}
+
+/* Second section inside main section that contains both pictures and text. */
+.main-item2{
+  display: flex;
+  flex-direction: column;
+}
+/* Container for the two divs with the images for the main page */
+.main-container-index.main-item2.image-container{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+/* Div item1 inside image-container.  */
+.main-image1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main-image1 img {
+  width: 454px;
+  height: 268px;
+  object-fit: scale-down;
+  background: rgba(63, 71, 86, .2);
+}
+
+/* Div item2 inside image-contaner */
+.main-image2{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main-image2 img {
+  width: 454px;
+  height: 268px;
+  object-fit: scale-down;
+  background: rgba(63, 71, 86, .2);
+}
+
+
+/* Form container  */
+.form-container-index{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Form container item1 that contains the text for contact and phone number */
+.form-container-item1{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: start;
+}
+
+.form-container-item1 a:hover{
+  opacity: 60%;
+}
+
+.form-container-item2{
+  width: 100%;
+  height: 100%;
+}
+
+/* Makes all forms take 100% width of containers they are in. */
+form{
+  width: 100%;
+}
+
+/* Styling for form elements */
+.form-group{
+  margin-bottom: 30px;
+  position: relative;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid black;
+  color: black;
+  font-size: 15px;
+}
+
+label {
+  height: 100%;
+  padding: 0px;
+  cursor: pointer;
+}
+
+textarea { 
+  width: 100%;
+  height: 200px;
+}
+
+button {
+  width: 35%;
+  padding: 10px 0;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 7px;
+  background-color: #0080D4;
+  color: white;
+  font-weight: bold;
+}
+
+.row-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row-form .form-group{
+  flex-basis: 46%;
+}
+
+button:hover{
+  opacity: 70%;
+}
+/* End of styling for form element */
+
+/* Styling first section of main page */
+.form-container-item1 p {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0080D4;
+}
+
+.form-container-item1 a {
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  align-self: center;
+  color: #0080D4;
+}
+
+.main-item1 h1 {
+  color: #0080D4;
+}
+
+.main-item1 p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+li {
+  line-height: 2;
+}
+/* End of styling for first section of main page */
+
+/* Styling for second part of main page */
+.main-item2 h1 {
+  color:#0080D4;
+}
+
+.main-image1 h3, .main-image2 h3{
+  color: #0080D4;
+}
+
+.main-image1 p, .main-image2 p {
+  line-height: 2;
+}
+
+.list-holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-holder ul {
+  list-style: none;
+}
+
+/* Styling for the AJAX response for the form elements afters submitting*/
+#changeElement {
+  display: flex;
+  flex-direction: column;
+}
+
+#changeElement h2 {
+  color: #0080D4;
+}
+
+#changeContactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#changeContactForm h2 {
+  color: #0080D4;
+}
+
+/* End of styling for second part of main page */
+
+
+
+/* CONTACT PAGE CSS */
+.main-container-contact {
+  margin: 2% 3% 2% 3%;
+}
+
+/* Set display flex for contact us header of page */
+.main-container-contact.item1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Display flex for the phone number and table inside the contact us page */
+.main-container-contact.item1.contact1{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 0;
+}
+
+/* Styling for h1 tags */
+.main-container-contact.item1.contact1 h1 {
+  color: #0080D4;
+}
+
+/* Styling for the phone link */
+.main-container-contact.item1.contact1 a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #3F4756;
+}
+
+/* Center the h1 element */
+.main-container-contact h1{
+  justify-self: center;
+}
+
+/* Set width and height of embedded map */
+.main-container-contact.item1.contact2 iframe{
+  height: 100%;
+  width: 500px;
+}
+
+.contact-page-heading{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-page-heading h1 {
+  color: #0080D4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container-contact.item2 h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #0080D4;
+}
+
+.contact-table {
+  border-collapse: collapse;
+  
+}
+
+.contact-table tr{
+  border-bottom: 1px solid #3F4756;
+  color: #0080D4;
+}
+
+.contact-table tr:last-child {
+  border-bottom: none;
+}
+
+.contact-table tr, .contact-table td{
+  padding: 1em 4em;
+}
+
+.main-container-contact.item1.contact1 a:hover {
+  opacity: 50%;
+  transition: .5s;
+}
+/* END OF CONTACT PAGE CSS */
+
+
+/* ABOUT PAGE CSS */
+.main-container-about {
+  margin: 2% 3% 2% 3%;
+}
+
+.main-container-about.item1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-container-about.item1 h1 {
+  font-family: 'Roboto', sans-serif;
+  padding-bottom: 30px;
+  color: #0080D4;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.main-container-about.item1 img{
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  grid-row: 2;
+  grid-column: 1 / 3;
+}
+
+.main-container-about.item1 p{
+  padding: 0% 8% 0% 8%;
+}
+
+.main-container-about.item2 h1{
+  font-family: 'Roboto', sans-serif;
+  color: #0080D4;
+  padding: 20px 0px 10px 0px;
+}
+
+.main-container-about.item1 p {
+  grid-row: 2;
+}
+/* END ABOUT PAGE CSS */
+
+
+/* SERVICE PAGE CSS */
+.main-container-service {
+  margin: 2% 3% 2% 3%;
+}
+
+.main-container-service {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container-service.item1 {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.main-container-service.item1.service1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main-container-service.item1.service2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main-container-service.item1.service2 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.main-container-service.item2.service3 {
+  align-items: center;
+}
+
+.main-container-service.item2.service3 img {
+  height: 268px;
+  width: 454px;
+  align-self: center;
+}
+
+.main-container-service.item2.service3 {
+  text-align: center;
+}
+
+.main-container-service.item3.dealer-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.main-container-service h1 {
+  font-family: 'Roboto', sans-serif;
+  color: #0080D4;
+}
+
+.main-container-service.item1.service1 h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #0080D4;
+}
+
+.main-container-service.item1.service2 h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #0080D4;
+}
+
+.main-container-service.item2.service3 h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #0080D4;
+}
+
+.main-container-service.item1.service1 img {
+  width: 454px;
+  height: 268px;
+  object-fit: scale-down;
+  background: rgba(63, 71, 86, .2);
+}
+
+.main-container-service.item1.service2 img {
+  width: 454px;
+  height: 268px;
+  object-fit: scale-down;
+  background: rgba(63, 71, 86, .2);
+}
+
+.main-container-service.item2.service3 img {
+  width: 454px;
+  height: 268px;
+  object-fit: scale-down;
+  background: rgba(63, 71, 86, .2);
+}
+
+/* Styling for the tabs on the review page */
+
+#tabs ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+#tabs ul li {
+  width: 100%;
+}
+#tabs ul li a{
+  width: 100%;
+  display: block;
+}
+/* END SERVICE PAGE CSS */
+
+
+
+/* REVIEWS PAGE CSS */
+/* Container for reviews page content */
+.main-container-reviews {
+  margin: 2% 3% 2% 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container-reviews h1 {
+  color: #0080D4;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-container-reviews p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15pt;
+}
+/* END REVIEW PAGE CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
